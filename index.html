@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="descripcion" content="Pagina web de videojuegos">
     <title>Blog Videjuegos</title>
+    <!-- Prefetch  Carga la siguiente pagina a la que el usuario iria-->
+    <link rel="Prefetch" href="entrada.html" as="document">
+    <!-- Preload carga documentos necesarios para la pagina -->
+    <link rel="Preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="preload" href="googlefonts.com" crossorigin="crossorigin" as="font"> para fuentes externas-->
+    <link rel="Preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="img/man-6018751_1280.jpg" as="image">
 </head>
 <body>
     <header class="header">
@@ -15,7 +23,7 @@
                     <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeVideojuegos</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Tipos</a>
+                    <a href="other.html" class="navegacion__enlace">Tipos</a>
                     <a href="cursos.html" class="navegacion__enlace">Son una adiccion</a>
                     <a href="contacto.html" class="navegacion__enlace">Dejarlos</a>
                 </nav>
@@ -31,7 +39,7 @@
             <h3>Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/TiposDeVideojuegos.png" alt="image">
+                        <img src="img/TiposDeVideojuegos.png" alt="image" loading="lazy">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de videojuegos</h4>
@@ -41,7 +49,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/man-6018751_1280.jpg" alt="image">
+                    <img src="img/man-6018751_1280.jpg" alt="image" loading="lazy">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Los videojuegos son una adiccion?</h4>
@@ -51,7 +59,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img//NoCopy.jpeg" alt="image">
+                    <img src="img//NoCopy.jpeg" alt="image" loading="lazy">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Como dejar de jugar videojuegos</h4>

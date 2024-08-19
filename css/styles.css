@@ -21,12 +21,6 @@ body{
     line-height: 2;
 }
 
-/* @media (min-width: 769px) {
-    body{
-        line-height: 2;
-    }
-} */
-
 /** Globales **/
 
 .contenedor{
@@ -107,9 +101,16 @@ img{
 }
 .logo__nombre{
     font-weight: 400;
+    font-size: 3.5rem;
+}
+@media (min-width: 912px) {
+    .logo__nombre{
+        font-size: 4.8rem;
+    }
 }
 .logo__nombre:hover{
     color: var(--gris);
+    cursor: pointer;
 }
 
 .logo__bold{
@@ -133,6 +134,7 @@ img{
 
 .navegacion__enlace:hover{
     color: var(--gris);
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -163,6 +165,13 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+}
+
+.boton--primario:hover{
+    background-color: var(--blanco);
+    color: #000000;
+    border: 1px solid black;
+    cursor: pointer;   
 }
 
 @media (min-width: 768px) {
@@ -200,10 +209,58 @@ img{
     margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+    .tipos-videojuegos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
+    
+}
+
 /* FOOTER */
 .footer{
     background-color: var(--negro);
     width: 100%;
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+
+.contacto-bg{
+    background-image: url(/img/man-6018751_1280.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding-top: 3rem;
+    padding-right: 3rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 20rem;
+}
+
+@media (min-width: 768px) {
+    .formulario{
+        padding: 5rem;
+    }
 }
